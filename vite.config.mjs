@@ -58,8 +58,5 @@ export default defineConfig({
       },
     },
   },
-  build: {
-    outDir: './docs'
-  },
-  base:'portfolio',
+  base: '/portfolio/', // リポジトリ名に置き換えてください
 })
