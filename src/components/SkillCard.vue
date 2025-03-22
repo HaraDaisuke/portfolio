@@ -1,5 +1,10 @@
 <template>
-  <v-card class="skill-card" :color="cardColor" variant="tonal">
+  <v-card
+    class="skill-card"
+    :color="cardColor"
+    variant="tonal"
+    v-animateonscroll="{ enterClass: 'p-animate-right p-animate-fadein', leaveClass: 'animate-leave fade-out-0' }"
+  >
     <v-card-item>
       <v-row align="center">
         <v-col cols="auto">
@@ -28,8 +33,14 @@
 </template>
 
 <script>
-export default {
+import { defineComponent } from 'vue';
+import AnimateOnScroll from 'primevue/animateonscroll';
+
+export default defineComponent({
   name: 'SkillCard',
+  directives: {
+    animateonscroll: AnimateOnScroll,
+  },
   props: {
     name: {
       type: String,
@@ -57,7 +68,7 @@ export default {
       default: 'primary',
     },
   },
-};
+});
 </script>
 
 <style scoped>
