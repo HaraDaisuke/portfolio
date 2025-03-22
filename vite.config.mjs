@@ -10,7 +10,7 @@ import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/pages-test-vue-02/', // ここに追記する
+  base: '/portfolio/', // ここに追記する
   plugins: [
     Vue({
       template: { transformAssetUrls }
