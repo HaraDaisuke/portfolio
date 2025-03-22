@@ -59,5 +59,4 @@ export default defineConfig({
       },
     },
   },
-  base: '/portfolio/', // リポジトリ名に置き換えてください
 })
